@@ -1,9 +1,10 @@
 FROM python:3.5.2
-# -alpine
+# TODO replace by a light-weight image like alpine
 
 MAINTAINER Jesús Pardillo "dev@jesuspardillo.com"
 
-###########
+########### from https://denibertovic.com/posts/handling-permissions-with-docker-volumes
+
 RUN apt-get update && apt-get -y --no-install-recommends install \
     ca-certificates \
     curl
